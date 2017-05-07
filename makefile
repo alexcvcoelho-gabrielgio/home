@@ -3,7 +3,7 @@ GP=git pull
 submodules: sub-doc sub-session-query sub-session-command sub-session-worker sub-track-query sub-track-command sub-track-worker sub-sim-worker
 
 sub-pull:
-	$(GP) --recurse-submodules
+	ls | xargs -P10 -I{} git -C {} pull 
 
 sub-doc:
 	$(GS) https://github.com/alexcvcoelho-gabrielgio/doc.git
