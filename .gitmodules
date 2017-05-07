@@ -1,0 +1,24 @@
+[submodule "doc"]
+	path = doc
+	url = https://github.com/alexcvcoelho-gabrielgio/doc.git
+[submodule "session-query"]
+	path = session-query
+	url = https://github.com/alexcvcoelho-gabrielgio/session-query.git
+[submodule "session-command"]
+	path = session-command
+	url = https://github.com/alexcvcoelho-gabrielgio/session-command.git
+[submodule "session-worker"]
+	path = session-worker
+	url = https://github.com/alexcvcoelho-gabrielgio/session-worker.git
+[submodule "track-query"]
+	path = track-query
+	url = https://github.com/alexcvcoelho-gabrielgio/track-query.git
+[submodule "track-command"]
+	path = track-command
+	url = https://github.com/alexcvcoelho-gabrielgio/track-command.git
+[submodule "track-worker"]
+	path = track-worker
+	url = https://github.com/alexcvcoelho-gabrielgio/track-worker.git
+[submodule "sim-worker"]
+	path = sim-worker
+	url = https://github.com/alexcvcoelho-gabrielgio/sim-worker.git
