@@ -1,0 +1,2 @@
+flask==0.12.1
+flask_bower==1.3.0

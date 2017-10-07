@@ -1,0 +1,19 @@
+{
+  "name": "home-site",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/alexcvcoelho-gabrielgio/home",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta",
+    "font-awesome": "Font-Awesome#^4.7.0"
+  }
+}
