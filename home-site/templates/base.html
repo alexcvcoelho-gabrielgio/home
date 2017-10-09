@@ -18,7 +18,7 @@
         <a class="nav-link disabled" href="#">API</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link disabled" href="#">Dashboard</a>
+        <a class="nav-link disabled" href="/dash">Dashboard</a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="links">Links</a>
@@ -39,8 +39,9 @@
     </div>
 </footer>
 
-<script src="{{ url_for('bower.static', filename='bootstrap/dist/js/bootstrap.js') }}"></script>
 <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+<script src="{{ url_for('bower.static', filename='popper.js/dist/popper.js') }}"></script>
+<script src="{{ url_for('bower.static', filename='bootstrap/dist/js/bootstrap.js') }}"></script>
 {% block script %}{% endblock %}
 </body>
 </html>
