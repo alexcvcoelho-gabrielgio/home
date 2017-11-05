@@ -15,7 +15,7 @@ thread = None
 def background_thread():
     while True:
         time.sleep(1)
-        response = urllib.request.urlopen('http://localhost:3000/api/active').read()
+        response = urllib.request.urlopen('http://gabrielgio.com.br:3000/api/active').read()
         socketio.emit('message', json.loads(response))
 
 
@@ -38,7 +38,7 @@ def links():
 
 @app.route('/dash')
 def dash():
-    response = urllib.request.urlopen('http://localhost:3000/api/active').read()
+    response = urllib.request.urlopen('http://gabrielgio.com.br:3000/api/active').read()
     return render_template('dashboard.html', data=json.loads(response))
 
 
