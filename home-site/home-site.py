@@ -38,8 +38,7 @@ def links():
 
 @app.route('/dash')
 def dash():
-    response = urllib.request.urlopen('http://gabrielgio.com.br:3000/api/active').read()
-    return render_template('dashboard.html', data=json.loads(response))
+    return render_template('dashboard.html')
 
 
 if __name__ == '__main__':

@@ -1,34 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="container-fluid" style="margin-top: 10px">
-        <div class="card-columns">
-            {% for item in data %}
-                <div id="{{ item.uuid }}" class="card text-white bg-info mb-3">
-                    <div id="{{ item.uuid + 'brand' }}" class="card-header">{{ item.brand }}</div>
-                    <div class="card-body">
-                        <h4 class="card-title">{{ item.model }}</h4>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="card-text">Latitude: <a id="{{ item.uuid + 'lat' }}">{{ item.lat }}</a>
-                                        <br>
-                                        Longitude <a id="{{ item.uuid + 'long' }}">{{ item.long }}</a></p>
-                                </div>
-                                <div class="col">
-                                    <p class="card-text">Velocidade: <a id="{{ item.uuid + 'vel' }}">{{ item.vel }}</a>
-                                        <br>
-                                        Gasolina: <a id="{{ item.uuid + 'gas' }}">{{ item['gas-lvl'] }}</a></p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+        <div id="map"></div>
     </div>
-{% endblock %}s
+{% endblock %}
 {% block script %}
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={API-KEY}"></script>
     <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+{% endblock %}
+{% block head %}
+    <style>
+        #map {
+            height: 860px;
+            width: 100%;
+        }
+    </style>
 {% endblock %}
