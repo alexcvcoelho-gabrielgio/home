@@ -15,7 +15,7 @@ thread = None
 def background_thread():
     while True:
         time.sleep(1)
-        response = urllib.request.urlopen('http://gabrielgio.com.br:3000/api/active').read()
+        response = urllib.request.urlopen('http://172.17.0.1:3000/api/active').read()
         socketio.emit('message', json.loads(response))
 
 
@@ -43,4 +43,4 @@ def dash():
 
 if __name__ == '__main__':
     Bower(app=app)
-    socketio.run(app, port=5000, debug=True)
+    socketio.run(app, port=5000, debug=False)
