@@ -7,7 +7,9 @@
 {% block script %}
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key={}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_pMaRLrQCWUZADJP1ADgGACRdyzBV0SQ"></script>
+    <script src="{{ url_for('static', filename='markerAnimation.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='marker-animate-unobtrusive/dist/SlidingMarker.min.js') }}"></script>
     <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
 {% endblock %}
 {% block head %}
